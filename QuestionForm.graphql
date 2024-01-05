@@ -1,6 +1,0 @@
-type QuestionForm
-  @createModel(accountRelation: LIST, description: "Question form used by users") {
-  type: String! @string(minLength: 3, maxLength: 50)
-  question: String! @string(minLength: 3, maxLength: 50)
-  user_answer: String! @string(minLength: 3, maxLength: 50)
-}
