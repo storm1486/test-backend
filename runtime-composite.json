@@ -1,0 +1,48 @@
+{
+  "models": {
+    "QuestionForm": {
+      "interface": false,
+      "implements": [],
+      "id": "kjzl6hvfrbw6c53vuy2ks5dkhvl70h60vazbtukdw5315wmox3x5sbmfgyr18sh",
+      "accountRelation": { "type": "list" }
+    },
+    "Amenity": {
+      "interface": false,
+      "implements": [],
+      "id": "kjzl6hvfrbw6c6cnf5n4xzmxqbsz9q5dydkysozfzp9n2dwv47ni944wzw120wl",
+      "accountRelation": { "type": "list" }
+    }
+  },
+  "objects": {
+    "QuestionForm": {
+      "type": { "type": "string", "required": true },
+      "question": { "type": "string", "required": true },
+      "user_answer": { "type": "string", "required": true }
+    },
+    "Amenity": {
+      "type": {
+        "type": "list",
+        "required": true,
+        "item": { "type": "string", "required": true }
+      },
+      "image": { "type": "string", "required": true },
+      "address": { "type": "string", "required": true },
+      "distance": { "type": "string", "required": true },
+      "location": { "type": "string", "required": true },
+      "closingHour": { "type": "string", "required": true },
+      "description": {
+        "type": "list",
+        "required": true,
+        "item": { "type": "string", "required": true }
+      },
+      "openingHour": { "type": "string", "required": true },
+      "availability": { "type": "integer", "required": true },
+      "operationalHours": { "type": "string", "required": true }
+    }
+  },
+  "enums": {},
+  "accountData": {
+    "questionFormList": { "type": "connection", "name": "QuestionForm" },
+    "amenityList": { "type": "connection", "name": "Amenity" }
+  }
+}
