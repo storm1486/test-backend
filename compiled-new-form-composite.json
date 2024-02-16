@@ -1,0 +1,20 @@
+{
+  "models": {
+    "NewForm": {
+      "interface": false,
+      "implements": [],
+      "id": "kjzl6hvfrbw6c5zjvetb85o0uial0i7xmfkhh0ih6jn8k41a1qzgdpn6tmx0ssb",
+      "accountRelation": { "type": "list" }
+    }
+  },
+  "objects": {
+    "NewForm": {
+      "type": { "type": "string", "required": true },
+      "question": { "type": "string", "required": true },
+      "creatorDid": { "type": "string", "required": true },
+      "user_answer": { "type": "string", "required": true }
+    }
+  },
+  "enums": {},
+  "accountData": { "newFormList": { "type": "connection", "name": "NewForm" } }
+}
